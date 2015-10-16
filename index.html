@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ayman Badaoui - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/semantic.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="assets/js/jquery-2.1.3.min.js"></script>
+  <script src="assets/js/jquery.lettering-0.6.1.min.js"></script>
+  <script src="assets/js/jquery.scrollorama.js"></script>
+
+  <!-- jQuery Plugin -->
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/abadaoui.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/semantic.min.js"></script>
+
+
+
+<script>
+    $(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+ 
+    $('.portfolioFilter button').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
+});
+    </script>
+
+<script>
+   $(document).ready(function(){
+       
+       $('.a-navbar-menu a').click(function(){
+         $('html,body').animate({
+           scrollTop: $($(this).attr('href')).offset().top
+           },1500, 'easeInOutExpo');
+           
+           event.preventDefault();
+       });
+        });
+   </script>
+
+
+</head>
+<body>
+
+<div class="">
+
+
+  <div class=" container-fluid bg_color_1 padding text-center" id="cover">
+
+  <header class="header">
+      <nav class="a-navbar full" id="anavbar">
+        <div class="container-fluid">
+          <a href="" class="a-navbar-logo">
+            <img src="assets/img/AB-logo.png">
+          </a>
+          <div class="a-navbar-menu ">
+            <a href="#about" class="active">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#work">WORK</a>
+            <a href="#say-hello">SAY HELLO</a>
+          </div>
+          <div class="a-navbar-ico-resp" id="anavbar-ico-resp">
+          </div>
+        </div>
+      </nav>
+  </header>
+
+  <section class="about-all">
+    
+    <div class="row">
+      <div class="about" id="about">
+      <div class="im-avatar">
+        <h1>I'm</h1>
+        <img src="assets/img/AB-avatar.png">
+      </div>
+      <div class="AymanBadaoui">
+        <h1><span class="Ayman">Ayman</span> Badaoui</h1>
+        <h2>Web Designer</h2>
+        <h2>Front end Developer</h2>
+        <h3>From Casablanca, Morocco</h3>
+      </div>
+    </div>
+    </div>
+  
+  <div class="row">
+    
+    <div class="i-have-passion">
+        <p>I have a passion for Web Design. I love creating for the Web and Mobile Devices.</p>
+      </div>
+      <div class="socials">
+        <ul class="nav-socials">
+          <li><a href="#"><img src="assets/img/in.png"></a></li>
+          <li><a href="#"><img src="assets/img/gplus.png"></a></li>
+          <li><a href="#"><img src="assets/img/insta.png"></a></li>
+          <li><a href="#"><img src="assets/img/fb.png"></a></li>
+          <li><a href="#"><img src="assets/img/tw.png"></a></li>
+          <li><a href="#"><img src="assets/img/msg.png"></a></li>
+        </ul>
+      </div>
+
+  </div>
+
+  </section>
+  </div>
+
+
+  <div class="Philosophy text-center">
+    <div class="container-fluid padding-top-bottom">
+      <h1>The idea is everything,</h1>
+      <h1>Creativity is simplicity</h1>
+      <h5>My Work Philosophy</h5>
+    </div>
+  </div>
+
+  <div class="two-section">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-6 col-xs-12 text-center i-create-things">
+          <h1>I create things from scratch</h1>
+          <img src="assets/img/love-scratch.svg" alt="I create things from scratch with love">
+        </div>
+
+        <div class="col-md-6 col-xs-12 text-center professional-work">
+          <h1>Professional at work</h1>
+          <img src="assets/img/professional-work.svg" alt="Professional at work">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="skills" id="skills">
+    <div class="container-fluid what-i-love">
+
+      <div class="row text-center">
+        <h1>What I <i class="fa fa-heart blue"></i> to do</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 col-xs-12 text-center web-design">
+          <img src="assets/img/web-design.png" alt="Web Design">
+          <h1>Web Design</h1>
+          <p>Design and creation of a creative and innovative web interface.</p>
+          <span>Photoshop, Illustrator, Responsive Design, Mobile Friendly</span>
+        </div>
+
+        <div class="col-md-4 col-xs-12 text-center code">
+          <img src="assets/img/code.png" alt="Professional at work">
+          <h1>Code</h1>
+          <p>Integration of the interface in HTML5 / CSS3 / JS and responsive web design.</p>
+          <span>HTML5, CSS3, JavaScript, jQuery</span>
+        </div>
+
+        <div class="col-md-4 col-xs-12 text-center code wordpress-p">
+          <img class="img-wordpress" src="assets/img/wordpress.svg" alt="Wordpress">
+          <h1>WordPress</h1>
+          <p>Preparation of a single theme, modifiable at will through the administration interface.</p>
+          <span>Wordpress, CMS, SEO</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="portfolio global-section section-my-works" id="work">
+        <div class="container">
+                        <div class="row">
+                             <div class="col-md-12">
+                                <h1 class="text-center wow fadeInUp animated work-title">
+                                    Work Completed <span>:)</span>
+                                </h1>
+                            </div>               
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                 <!-- Isotope nav -->
+                                 <div class="isotope-button-container margin-btm-30">
+                                    <div id="filters" class="button-group portfolioFilter">
+                                      <button class="btn btn-primary btn-isotope current" data-filter="*">Tout</button>
+                                      <button class="btn btn-primary btn-isotope" data-filter=".UI-UX">UI/UX</button>
+                                      <button class="btn btn-primary btn-isotope" data-filter=".Code">Code</button>
+                                      <button class="btn btn-primary btn-isotope" data-filter=".Design">Web Design</button>
+                                      <button class="btn btn-primary btn-isotope" data-filter=".LogoDesign">Logo Design</button>
+                                    </div>
+                                 </div>
+                                <!-- /Isotope nav -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="container" class="portfolioContainer">
+
+                <div class="col-md-4 col-sm-6 col-xs-12 Code Design UI-UX">
+                    <a href="index.html" class="image-wrap">
+                        <div class="hover-wrap">
+                            <div class="overlay-img"></div>
+                            <div class="overlay-txt">
+                                <span class="portfolio-overlay-title">AB site</span>
+                                <span class="portfolio-overlay-category">Code Web Design UI-UX</span>
+                                <span class="portfolio-overlay-technology">Photoshop - HTML5 - CSS3 - JavaScript - jQuery</span>
+                            </div>
+                        </div>
+                        <img src="assets/img/absite.png" class="img-full-responsive wp-post-image" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 Design">
+                    <a href="assets/img/esf-maquette.png" class="image-wrap">
+                        <div class="hover-wrap">
+                            <div class="overlay-img"></div>
+                            <div class="overlay-txt">
+                                <span class="portfolio-overlay-title">ESF Site</span>
+                                <span class="portfolio-overlay-category">Web  Design</span>
+                                <span class="portfolio-overlay-technology">Photoshop</span>
+                            </div>
+                        </div>
+                        <img src="assets/img/esf-maquette.png" class="img-full-responsive wp-post-image" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 Design">
+                    <a href="assets/img/Maquette_SMDECOR.png" class="image-wrap">
+                        <div class="hover-wrap">
+                            <div class="overlay-img"></div>
+                            <div class="overlay-txt">
+                                <span class="portfolio-overlay-title">SMDECOR Site</span>
+                                <span class="portfolio-overlay-category">Web  Design</span>
+                                <span class="portfolio-overlay-technology">Photoshop</span>
+                            </div>
+                        </div>
+                        <img src="assets/img/Maquette_SMDECOR.png" class="img-full-responsive wp-post-image" alt=""></a>
+                </div>
+                <div class="work-item col-md-4 col-sm-6 col-xs-12 LogoDesign">
+                    <a href="" class="image-wrap">
+                        <div class="hover-wrap">
+                            <div class="overlay-img"></div>
+                            <div class="overlay-txt">
+                                <span class="portfolio-overlay-title">Here For You</span>
+                                <span class="portfolio-overlay-category">Logo Design</span>
+                                <span class="portfolio-overlay-technology">Illustrator</span>
+                            </div>
+                        </div>
+                        <img src="assets/img/here4u.png" class="img-full-responsive wp-post-image" alt=""></a>
+                </div>
+                <div class="work-item col-md-4 col-sm-6 col-xs-12 LogoDesign">
+                    <a href="" class="image-wrap">
+                        <div class="hover-wrap">
+                            <div class="overlay-img"></div>
+                            <div class="overlay-txt">
+                                <span class="portfolio-overlay-title">BigliettiEventi</span>
+                                <span class="portfolio-overlay-category">Logo Design</span>
+                                <span class="portfolio-overlay-technology">Illustrator</span>
+                            </div>
+                        </div>
+                        <img src="assets/img/bigliettieventi.png" class="img-full-responsive wp-post-image" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 LogoDesign">
+                    <a href="index.html" class="image-wrap">
+                        <div class="hover-wrap">
+                            <div class="overlay-img"></div>
+                            <div class="overlay-txt">
+                                <span class="portfolio-overlay-title">SMDECOR Logo</span>
+                                <span class="portfolio-overlay-category">Logo Design</span>
+                                <span class="portfolio-overlay-technology">Illustrator</span>
+                            </div>
+                        </div>
+                        <img src="assets/img/smdecor-logo.png" class="img-full-responsive wp-post-image" alt=""></a>
+                </div>
+
+   
+            <!-- /Isotope content -->
+        </div>
+
+    </div><!-- end work -->
+
+    <div class="take-cafe ">
+      <div class="container-fluid bg_coffee">
+        <div class="text-center">
+          <h1>let's take a coffee, and work together.</h1>
+          <div class="say-hello">
+            <h1>If you want to say just hello! do it now :)</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="contact" id="say-hello">
+          <div class="text-center email">
+            <h2>badaouiayman@gmail.com</h2>
+          </div>
+
+
+        </div>
+        <div class="copyright text-center">
+          <p>2015 - Hand coded and designed with <i class="fa fa-heart blue"></i> in Casablanca, Morocco</p>
+        </div>
+      </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

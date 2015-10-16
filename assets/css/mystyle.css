@@ -1,0 +1,690 @@
+/* ----- AymanBadaoui CSS FILE -----
+
+Hand coded by : Ayman Badaoui
+
+--------------------------------- */
+
+/*--------------- FONTS --------------*/
+
+
+@font-face {
+  font-family: 'Gestalight';
+  src: url('../fonts/Gesta/Gesta-Light.otf') format("opentype");
+  src: url('../fonts/Gesta/Gesta-Light.woff') format('woff');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Gesta';
+  src: url('../fonts/Gesta/Gesta-Light-Italic.otf') format("opentype");
+  src: url('../fonts/Gesta/Gesta-Light-Italic.woff') format('woff');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gesta';
+  src: url('../fonts/Gesta/Gesta.otf') format("opentype");
+  src: url('../fonts/Gesta/Gesta.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gesta';
+  src: url('../fonts/Gesta/Gesta-Bold.otf') format("opentype");
+  src: url('../fonts/Gesta/Gesta-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gestabold';
+  src: url('../fonts/Gesta/Gesta-Bold-Italic.otf') format("opentype");
+  src: url('../fonts/Gesta/Gesta-Bold-Italic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+/*---------------navbar--------------*/
+
+.logo img{
+    width: 40px;
+    height: 43px;
+}
+
+.navbar-brand {
+    padding: 0px !important;
+}
+
+.top-nav li {
+    padding: 0px 20px;
+}
+
+.top-nav li:last-child {
+    padding-right: 0px;
+}
+
+.top-nav li a{
+   text-decoration: none;
+}
+
+.top-nav li a:hover{
+   text-decoration: none;
+   background: none !important;
+}
+
+.navbar {
+    min-height: 60px !important;
+    padding-top: 20px;
+}
+
+
+/*---------------navbar--------------*/
+
+.a-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+
+    transition-property: all;
+    -webkit-transition-property: all
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+}
+
+.a-navbar.full {
+    height: 100px;
+    line-height: 100px;
+
+}
+.a-navbar.shrink {
+    height: 60px;
+    line-height: 60px;
+    background: #52b3d9;
+
+}
+
+.a-navbar.shrink .a-navbar-logo img {
+     width: 40px;
+    height: 43px;
+}
+.a-navbar-menu {
+    overflow: hidden;
+    text-align: right;
+}
+
+.a-navbar-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 30px;
+}
+
+.a-navbar-menu a:last-child {
+    padding-right: 0px;
+}
+
+.a-navbar-menu a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.a-navbar-menu .active {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.a-navbar-logo {
+    float: left;
+}
+.a-navbar-logo img {
+    width: 57px;
+    height: 64px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+    .a-navbar-logo {
+        margin-left: 20px;
+    }
+    .a-navbar-menu {
+        display: none;
+    }
+    .a-navbar.shrink .a-navbar-ico-resp {
+        position: relative;
+        display: block;
+        float: right;
+        width: 45px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .a-navbar.shrink .a-navbar-ico-resp:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1em;
+        height: 0;
+        top: 15px;
+        left: 15px;
+        box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
+  }
+
+  /* line 191, ../sass/app.scss */
+  .responsive.shrink .a-navbar-menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background: #22313F;
+
+    transition-property: all;
+    -webkit-transition-property: all
+    -moz-transition-property: all
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+  }
+
+  /* line 199, ../sass/app.scss */
+  .a-navbar-ico-resp {
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+}
+
+
+/*---------------Header--------------*/
+
+
+
+.im-avatar {
+    float: left;
+    margin-right: 10%;
+}
+
+.AymanBadaoui {
+    text-align: left;
+}
+
+.Ayman {
+    font-weight: lighter;
+}
+
+.about {
+    position: relative;
+    margin: 0 auto;
+    min-width: 500px;
+    height: auto;
+    display: inline-block;
+    margin-top: 140px;
+    margin-bottom: 60px;
+
+}
+
+.about h1{
+    font-weight: bold;
+}
+
+.about h2{
+    font-family: "Gestalight";
+}
+
+.i-have-passion {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-left: 22%;
+}
+
+.nav-socials {
+    list-style: none;
+    padding-bottom: 45px;
+}
+
+.nav-socials li{
+    display: inline-block;
+    padding: 30px 45px 30px 0px;
+}
+
+
+/*---------------Philosophy-------------*/
+
+
+
+.Philosophy:before {
+    position: absolute;
+    margin-top: -43px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    content: ''; 
+    width: 80px;
+    height: 100px;
+    background: url("../img/idea.png");
+
+}
+
+
+.Philosophy h1 {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.Philosophy h5 {
+    padding-left: 22%;
+}
+
+
+.padding-top-bottom {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+
+/*--------------- I create things - Professional work--------------*/
+
+
+.i-create-things, .professional-work {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.i-create-things h1, .professional-work h1{
+    font-weight: bold;
+}
+
+.two-section img {
+    width: 180px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+/* ===================================*/
+/* . SKILLS */
+
+
+
+.web-design, .code {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.skills {
+    background: url("../img/bg_skills.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.web-design h1, .code h1{
+    font-weight: bold;
+}
+
+.web-design h3, .code h3{
+    font-weight: lighter;
+    padding-top: 60px;
+}
+
+.web-design p, .code p{
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 30px;
+}
+
+
+.skills-wordpress img {
+    width: 220px;
+    height: 220px;
+}
+
+.skills-wordpress p {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.skills-wordpress span {
+    color: #2c3e50;
+}
+
+.wordpress-p {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+
+.img-full-responsive {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.image-wrap {
+position: relative;
+overflow: hidden;
+display: block;
+}
+
+
+
+.hover-wrap {
+position: absolute;
+height: 100%;
+width: 100%;
+opacity: 0;
+-webkit-transition: .2s;
+transition: .2s;
+}
+
+.hover-wrap:hover {
+position: absolute;
+height: 100%;
+width: 100%;
+opacity: 2;
+-webkit-transition: .2s;
+transition: .2s;
+}
+
+
+.overlay-img {
+position: absolute;
+width: 100%;
+height: 100%;
+background: #2c3e50;
+opacity: .8;
+}
+
+.overlay-txt {
+position: absolute;
+font-size: 24px;
+line-height: 32px;
+width: 100%;
+color: #fff;
+text-align: center;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+.portfolio-overlay-title {
+display: block;
+color: #81cfe0;
+font-weight: bold;
+font-size: 36px;
+}
+
+.portfolio-overlay-category {
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px 5px 30px 5px;
+    font-weight: 700;
+}
+
+.portfolio-overlay-technology {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.work-title {
+    padding-bottom: 40px;
+}
+
+
+
+/* ===================================*/
+
+
+.portfolio img {
+    width: 100%
+}
+
+/*--------------- Portfolio --------------*/
+
+
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 999;
+    display: block;
+    overflow: hidden;
+
+}
+
+.portfolio .col-md-4, .portfolio .col-sm-6, .portfolio .col-xs-12 {
+    margin: 0;
+    padding: 0;
+}
+
+.global-section {
+    
+}
+
+
+.section-my-works{
+    background-color: #52b3d9;
+    color: #fff; 
+}
+
+
+.isotope-button-container {
+    text-align: center;
+}
+.margin-btm-30 {
+    margin-bottom: 30px;
+}
+.btn-isotope {
+    border-color: #fff;
+    background-color: transparent;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.btn-isotope:hover, .btn-isotope.current {
+    border-color: #fff;
+    background-color: #fff;
+    color: #22313F;
+}
+
+.cbp-fwslider {
+    position: relative;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 40px 0 60px;
+}
+
+.cbp-fwslider ul {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+.cbp-fwslider ul li {
+    transform: translateZ(0);
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.cbp-fwslider ul li > a,
+.cbp-fwslider ul li > div {
+    display: block;
+    text-align: center;
+    outline: none;
+}
+
+.cbp-fwslider ul li > a img {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+.cbp-fwslider nav span {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 100px;
+    background: #47a3da;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -50px;
+    line-height: 100px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.cbp-fwslider nav span:hover {
+    background: #378fc3;
+}
+
+.cbp-fwslider nav span.cbp-fwnext {
+    right: 0px;
+}
+
+.cbp-fwslider nav span.cbp-fwprev {
+    left: 0px;
+}
+
+.cbp-fwdots {
+    position: absolute;
+    bottom: 0px;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+}
+
+.cbp-fwdots span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #ddd;
+    margin: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cbp-fwdots span:hover {
+    background: #999;
+}
+
+.cbp-fwdots span.cbp-fwcurrent {
+    background: #47a3da;
+    box-shadow: 0 0 0 2px #47a3da;
+    transition: box-shadow 0.2s ease-in-out;
+}
+/*--------------- TAKE CAFE --------------*/
+
+.take-cafe {
+    background: url("../img/bg_take_cafe.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.take-cafe h1 {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+
+
+/*--------------- SAY HELLO --------------*/
+
+.say-hello {
+    background: #4693b0;
+    padding: 15px 40px 15px 40px;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+}
+
+.say-hello h1 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+/*--------------- CONTACT --------------*/
+
+.box-contact {
+    background: #2c3e50;
+    padding: 30px;
+}
+
+.contact {
+    padding: 0;
+    margin: 0 auto;
+    width: 51%;
+}
+
+.email {
+    padding-top: 40px;
+    color: #2c3e50;
+}
+
+
+.button-contact {
+    margin-top: 15px;
+}
+
+.box-contact-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    color: #2c3e50;
+}
+
+.box-contact-textarea {
+    display: block;
+    color: #2c3e50;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+}
+
+
+/*--------------- COPYRIGHT --------------*/
+
+
+.copyright {
+    padding: 50px 0px;
+}
+
+
+.copyright p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
